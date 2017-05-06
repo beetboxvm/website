@@ -1,5 +1,4 @@
 $bootstrap-sass-asset-helper: false !default;
-// Paper 3.3.7
 // Variables
 // --------------------------------------------------
 
@@ -69,7 +68,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          #444 !default;
+$headings-color:          #af1f2d !default;
 
 
 //== Iconography
@@ -834,7 +833,7 @@ $code-color:                  #c7254e !default;
 $code-bg:                     #f9f2f4 !default;
 
 $kbd-color:                   #fff !default;
-$kbd-bg:                      #333 !default;
+$kbd-bg:                      #af1f2d !default;
 
 $pre-bg:                      #f5f5f5 !default;
 $pre-color:                   $gray-dark !default;

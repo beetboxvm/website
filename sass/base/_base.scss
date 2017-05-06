@@ -30,3 +30,10 @@ body {
 .vertical-spacing {
   margin: $panel-heading-padding;
 }
+
+kbd a {
+  color: $kbd-color;
+  &:hover {
+    color: $kbd-color;
+  }
+}

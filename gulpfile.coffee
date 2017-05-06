@@ -88,7 +88,7 @@ gulp.task 'watch', ->
   gulp.watch [dev + 'js/custom/*.js'], ['js']
   gulp.watch [dev + 'css/*.css', dev + 'css/**/*.css', '!'+dev + 'css/*.min.css', '!'+dev + 'css/**/*.min.css'], ['css']
   gulp.watch [dev + 'pug/*.pug', dev + 'pug/**/*.pug'], ['pug']
-  gulp.watch [prod + '*.*', prod + '**/*.*', '!' + dev + 'sass/*.+(sass|scss)','!' + dev + 'sass/**/*.+(sass|scss)', '!gulpfile.*', '!' + dev + 'pug/*.pug', '' + dev + 'pug/**/*.pug'], { awaitWriteFinish: true }, ['reload']
+  gulp.watch [prod + '*.*', prod + '**/*.*', prod + '*.html', '!' + dev + 'sass/*.+(sass|scss)','!' + dev + 'sass/**/*.+(sass|scss)', '!gulpfile.*', '!' + dev + 'pug/*.pug', '!' + dev + 'pug/**/*.pug'], { awaitWriteFinish: true }, ['reload']
 
 gulp.task 'default', ['js', 'sass', 'css', 'pug', 'connect']
 gulp.task 'dev', ['js', 'sass', 'css', 'pug', 'connect', 'watch']
